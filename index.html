@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Khairuddin Wahyu Azhari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+  <div class="stars"></div>
+
+  <header>
+    <div class="logo">KW</div>
+    <nav>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects" class="card">
+      <h1 class="accent">My Projects</h1>
+      <div class="projects">
+        <div class="project">
+          <img src="https://i.ibb.co/JBtm8Nh/project1.jpg" alt="Web Portfolio" />
+          <h3>Website Portfolio</h3>
+          <p>Website responsif menampilkan karya desain dan otomotif dengan animasi halus.</p>
+        </div>
+        <div class="project">
+          <img src="./mawar (3).jpg" alt="Poster Design" />
+          <h3>Poster Campaign</h3>
+          <p>Poster visual modern dengan fokus pada warna, tipografi, dan pesan emosional.</p>
+        </div>
+        <div class="project">
+          <img src="./IMG20210503150423.jpg"alt="Vehicle Log App" />
+          <h3>Vehicle Maintenance Log</h3>
+          <p>Aplikasi web sederhana untuk mencatat servis kendaraan dan pengingat rutin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2 class="accent">Contact Me</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan singkat" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Khairuddin Wahyu Azhari ✨
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
